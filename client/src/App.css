@@ -1,12 +1,16 @@
 .App {
   text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgba(40, 44, 52, 0.9);
   padding: 20px;
   color: white;
   margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 main {
@@ -23,8 +27,12 @@ nav a {
   margin: 0 10px;
   color: #61dafb;
   text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 nav a:hover {
   text-decoration: underline;
+  background-color: rgba(97, 218, 251, 0.1);
 }

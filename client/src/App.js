@@ -7,12 +7,12 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <h1>NexBlog</h1>
-          <p>A scalable blogging platform</p>
+          <h1>📝 NexBlog</h1>
+          <p>Your modern blogging platform</p>
         </header>
         <main>
           <Routes>
-            <Route path="/" element={<div>Welcome to NexBlog</div>} />
+            <Route path="/" element={<div>Welcome to NexBlog - Start writing today!</div>} />
             <Route path="/login" element={<div>Login Page</div>} />
             <Route path="/register" element={<div>Register Page</div>} />
             <Route path="/create" element={<div>Create Post</div>} />
