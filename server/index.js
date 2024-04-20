@@ -27,7 +27,11 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/nexblog')
 
 // Basic route
 app.get('/', (req, res) => {
-  res.json({ message: 'NexBlog API is running!' });
+  res.json({ 
+    message: 'NexBlog API is running!',
+    version: '1.0.0',
+    status: 'active'
+  });
 });
 
 // Health check
