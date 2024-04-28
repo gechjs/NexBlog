@@ -9,7 +9,10 @@
     "server": "nodemon server/index.js",
     "client": "cd client && npm start",
     "build": "cd client && npm run build",
-    "install-deps": "npm install && cd client && npm install"
+    "install-deps": "npm install && cd client && npm install",
+    "test": "npm run test:server && npm run test:client",
+    "test:server": "echo 'Server tests not implemented yet'",
+    "test:client": "cd client && npm test"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
