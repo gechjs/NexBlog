@@ -25,6 +25,13 @@ const uploadMiddleware = multer({ dest: 'uploads/' });
 // Database connection
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/nexblog');
 
+// Routes
+const authRoutes = require('./routes/auth');
+const postRoutes = require('./routes/posts');
+
+app.use('/api/auth', authRoutes);
+app.use('/api/posts', postRoutes);
+
 // Basic route
 app.get('/', (req, res) => {
   res.json({ 
